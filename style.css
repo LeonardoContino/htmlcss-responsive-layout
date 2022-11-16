@@ -157,7 +157,26 @@ main {
   flex-basis: 70%;
   min-height: 500px;
 }
-
+/* get started */
+.get-s {
+  background-color: RGB(151, 146, 227);
+  text-align: center;
+  padding: 50px 20px;
+}
+.container-btm {
+  width: 500px;
+  margin: 0 auto;
+}
+/* footer */
+footer {
+  background-color: RGB(51, 51, 51);
+  text-align: center;
+  color: white;
+  padding: 20px 20px;
+}
+footer > p {
+  margin-top: 50px;
+}
 /* RESPONSIVE */
 /* 764px */
 @media screen and (min-width: 764px) {
