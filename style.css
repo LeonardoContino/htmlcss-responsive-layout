@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* utilitis */
+
+/* header */
+.navbar {
+  display: flex;
+  position: fixed;
+  background-color: RGB(20, 132, 253);
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+}
