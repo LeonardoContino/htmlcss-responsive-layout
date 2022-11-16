@@ -118,6 +118,30 @@ main {
 .t-col-text {
   flex-basis: 40%;
 }
+
+/* benefit */
+.benefit {
+  background-color: RGB(151, 146, 227);
+  min-height: 600px;
+  padding: 50px 0;
+}
+.benefit > h1 {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+.row-benefit {
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+}
+.col-benefit {
+  background-color: white;
+  min-height: 500px;
+  width: 80%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 /* RESPONSIVE */
 /* 764px */
 @media screen and (min-width: 764px) {
@@ -143,6 +167,17 @@ main {
   }
   .t-col-text {
     flex-basis: 80%;
+  }
+  /* benefit */
+  .row-benefit {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  .col-benefit {
+    width: 40%;
+    padding: 10px 10px;
   }
 }
 
@@ -179,5 +214,17 @@ main {
   .sp-bottom {
     position: relative;
     top: 100px;
+  }
+  /* benefit */
+  .row-benefit {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+  .col-benefit {
+    width: 28%;
+    min-height: 400px;
+    padding: 10px 10px;
   }
 }
