@@ -4,14 +4,45 @@
   box-sizing: border-box;
 }
 /* utilitis */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 /* header */
-.navbar {
-  display: flex;
+header {
   position: fixed;
   background-color: RGB(20, 132, 253);
-  height: 80px;
+  top: 0;
+  left: 0;
   width: 100%;
-  justify-content: space-between;
   padding: 0 20px;
+}
+.navbar {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.navbar-links {
+  display: none;
+}
+
+/* RESPONSIVE */
+/* header 1200px */
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1000px;
+    height: 100%;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0 20px;
+  }
 }
