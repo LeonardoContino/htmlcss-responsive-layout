@@ -244,6 +244,7 @@ main {
   margin-bottom: 20px;
   padding: 30px;
   display: block;
+  position: relative;
 }
 .col-benefit > h1 {
   color: RGB(151, 146, 226);
@@ -255,7 +256,7 @@ main {
   padding: 20px 0;
 }
 .col-benefit > p {
-  font-size: 20px;
+  font-size: 15px;
 }
 .col-benefit > a {
   padding: 15px 40px;
@@ -263,8 +264,8 @@ main {
   color: white;
   text-decoration: none;
   border-radius: 30px;
-  position: relative;
-  top: 70px;
+  position: absolute;
+  bottom: 30px;
 }
 
 /* about-us */
