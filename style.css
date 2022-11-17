@@ -116,25 +116,28 @@ main {
 /* strategic-planning */
 .strategic-planning {
   background-color: RGB(151, 146, 227);
-  min-height: 500px;
+
   padding: 50px 0;
 }
 .sp {
   min-height: 300px;
-  padding: 0 20px;
+
   flex-direction: column;
   margin-bottom: 20px;
   width: 100%;
+  color: white;
+  font-size: 30px;
 }
 .sp-top,
 .sp-bottom {
-  min-height: 300px;
   flex-direction: column;
   padding-bottom: 30px;
 }
-.img,
-.text {
-  min-height: 300px;
+
+.st-title {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
 }
 
 .bgc-w {
@@ -213,7 +216,7 @@ main {
   padding: 50px 20px;
 }
 .container-btm {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 /* footer */
@@ -234,7 +237,7 @@ footer > p {
     flex-wrap: wrap;
   }
   .col {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 -);
   }
   .bottom-cards {
     font-size: 20px;
@@ -289,7 +292,6 @@ footer > p {
   /* cards */
   .row {
     flex-basis: calc(100% / 3 * 2);
-    
   }
   .col:first-child {
     flex-direction: row;
@@ -310,43 +312,41 @@ footer > p {
   }
   .col {
     padding: 0;
-
   }
-  .top-cards .fa-solid{
+  .top-cards .fa-solid {
     color: RGB(20, 132, 253);
     font-size: 100px;
     display: flex;
     justify-content: center;
     margin: 20px;
+  }
 }
-  }
-  .img-phone {
-    max-height: 300px;
-  }
+.img-phone {
+  max-height: 300px;
+}
 
-  .sp {
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-  }
-  .sp-top,
-  .sp-bottom {
-    flex-basis: 40%;
-  }
-  .sp-bottom {
-    position: relative;
-    top: 100px;
-  }
-  /* benefit */
-  .row-benefit {
-    flex-direction: row;
-    flex-wrap: wrap;
+.sp {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.sp-top,
+.sp-bottom {
+  flex-basis: 40%;
+}
+.sp-bottom {
+  position: relative;
+  top: 100px;
+}
+/* benefit */
+.row-benefit {
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    justify-content: center;
-  }
-  .col-benefit {
-    width: 28%;
-    min-height: 400px;
-    padding: 10px 10px;
-  }
+  justify-content: center;
+}
+.col-benefit {
+  width: 28%;
+  min-height: 400px;
+  padding: 10px 10px;
 }
