@@ -116,12 +116,9 @@ main {
 /* strategic-planning */
 .strategic-planning {
   background-color: RGB(151, 146, 227);
-
   padding: 50px 0;
 }
 .sp {
-  min-height: 300px;
-
   flex-direction: column;
   margin-bottom: 20px;
   width: 100%;
@@ -133,15 +130,39 @@ main {
   flex-direction: column;
   padding-bottom: 30px;
 }
-
+.img {
+  width: 100%;
+}
 .st-title {
   font-size: 40px;
   text-align: center;
   padding: 40px;
 }
-
-.bgc-w {
+.text > h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.text > h3 {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+.arrow {
+  color: black;
+  margin-top: 20px;
+  font-size: 40px;
+  padding: 20px;
+  background-color: RGB(151, 146, 226);
+  display: flex;
+  justify-content: center;
+}
+.sp-bottom {
   background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 20px;
 }
 
 /* testimonials */
@@ -237,7 +258,7 @@ footer > p {
     flex-wrap: wrap;
   }
   .col {
-    flex-basis: calc(100% / 3 -);
+    flex-basis: calc(100% / 3);
   }
   .bottom-cards {
     font-size: 20px;
@@ -320,33 +341,31 @@ footer > p {
     justify-content: center;
     margin: 20px;
   }
-}
-.img-phone {
-  max-height: 300px;
-}
 
-.sp {
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-}
-.sp-top,
-.sp-bottom {
-  flex-basis: 40%;
-}
-.sp-bottom {
-  position: relative;
-  top: 100px;
-}
-/* benefit */
-.row-benefit {
-  flex-direction: row;
-  flex-wrap: wrap;
+  .img-phone {
+    max-height: 300px;
+  }
 
-  justify-content: center;
-}
-.col-benefit {
-  width: 28%;
-  min-height: 400px;
-  padding: 10px 10px;
+  .sp {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .sp-top,
+  .sp-bottom {
+    flex-basis: 40%;
+  }
+
+  /* benefit */
+  .row-benefit {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+  .col-benefit {
+    width: 28%;
+    min-height: 400px;
+    padding: 10px 10px;
+  }
 }
