@@ -269,6 +269,9 @@ main {
 }
 
 /* about-us */
+.about-us {
+  padding: 30px 20px;
+}
 .person-description {
   flex-direction: column;
   padding-left: 20px;
@@ -281,6 +284,13 @@ main {
 .person-text {
   flex-basis: 70%;
   min-height: 500px;
+}
+.about-us > h1 {
+  font-size: 30px;
+  color: RGB(151, 146, 227);
+}
+.about-us > p {
+  font-size: 20px;
 }
 /* get started */
 .get-s {
