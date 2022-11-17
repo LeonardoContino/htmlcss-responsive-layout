@@ -91,9 +91,6 @@ main {
   padding: 0px 30px;
   padding-top: 30px;
 }
-.col:first-child {
-  flex-basis: calc(100% / 3 * 2);
-}
 
 .top-bigcards > h2 {
   color: RGB(20, 132, 253);
@@ -141,22 +138,30 @@ main {
 .text > h2 {
   color: black;
   font-size: 30px;
-  text-align: center;
 }
 .text > h3 {
   color: black;
   font-size: 18px;
-  text-align: center;
+
   font-style: italic;
 }
 .arrow {
+  display: flex;
+  justify-content: center;
+}
+.fa-arrow-down {
   color: black;
   margin-top: 20px;
   font-size: 40px;
-  padding: 20px;
   background-color: RGB(151, 146, 226);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding-top: 5px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .sp-bottom {
   background-color: white;
@@ -175,6 +180,11 @@ main {
 }
 .testimonial-titles > h1 {
   padding: 30px 0;
+  color: RGB(151, 146, 227);
+  font-weight: 600;
+}
+.testimonial-titles > p {
+  font-size: 30px;
 }
 .t-row {
   flex-direction: column;
@@ -183,13 +193,30 @@ main {
   flex-direction: column;
   margin: 30px 0;
   background-color: RGB(151, 146, 227);
-  min-height: 400px;
+
+  border-radius: 20px;
+  align-items: center;
 }
 .t-col-img {
-  flex-basis: 60%;
+  width: 300px;
+  height: 300px;
+  margin: 40px 0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.t-col-img > img {
+  position: absolute;
+  top: 0;
+  left: -55%;
 }
 .t-col-text {
   flex-basis: 40%;
+  color: white;
+  font-size: 30px;
+}
+.t-col-text > h3 {
+  padding: 30px;
 }
 
 /* benefit */
@@ -201,7 +228,8 @@ main {
 .benefit > h1 {
   color: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 40px;
+  font-size: 40px;
 }
 .row-benefit {
   flex-direction: column;
@@ -214,6 +242,29 @@ main {
   width: 80%;
   border-radius: 15px;
   margin-bottom: 20px;
+  padding: 30px;
+  display: block;
+}
+.col-benefit > h1 {
+  color: RGB(151, 146, 226);
+  font-size: 60px;
+}
+.col-benefit > h2 {
+  color: RGB(151, 146, 226);
+  font-size: 30px;
+  padding: 20px 0;
+}
+.col-benefit > p {
+  font-size: 20px;
+}
+.col-benefit > a {
+  padding: 15px 40px;
+  background-color: RGB(151, 146, 226);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  position: relative;
+  top: 70px;
 }
 
 /* about-us */
@@ -257,8 +308,12 @@ footer > p {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .col:first-child {
+    flex-basis: calc(100% / 3 * 2 - 2rem);
+  }
   .col {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 - 2rem);
+    margin: 1rem;
   }
   .bottom-cards {
     font-size: 20px;
@@ -271,13 +326,16 @@ footer > p {
   /* testimonial */
   .t-col {
     flex-direction: row;
-    min-height: 200px;
   }
   .t-col-img {
-    flex-basis: 20%;
+    flex-basis: 30%;
+    margin-left: 10px;
   }
   .t-col-text {
-    flex-basis: 80%;
+    flex-basis: 70%;
+  }
+  .t-col-text > h3 {
+    display: flex;
   }
   /* benefit */
   .row-benefit {
@@ -345,17 +403,20 @@ footer > p {
   .img-phone {
     max-height: 300px;
   }
-
+  /* strategic planning */
   .sp {
+    display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
   }
-  .sp-top,
+  .sp-top {
+    flex-basis: 50%;
+  }
   .sp-bottom {
-    flex-basis: 40%;
+    flex-basis: 50%;
+    height: 100%;
+    position: relative;
+    top: 200px;
   }
-
   /* benefit */
   .row-benefit {
     flex-direction: row;
